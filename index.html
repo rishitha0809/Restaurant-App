@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to Restaurant</h1>
+  <button id="selectSeatBtn">Select the Seat</button>
+
+  <div class="seating-layout" id="seatingArea"></div>
+
+  <button id="nextBtn">Next</button>
+
+  <button id="menuBtn">Menu</button>
+
+  <div id="menuSection">
+    <h2>Menu</h2>
+    <div class="menu-item">
+  <label>Pizza - <span>&#8377;</span>70</label>
+  <input type="number" min="0" value="0" data-time="10" data-name="Pizza" />
+</div>
+<div class="menu-item">
+  <label>Burger - <span>&#8377;</span>50</label>
+  <input type="number" min="0" value="0" data-time="5" data-name="Burger" />
+</div>
+<div class="menu-item">
+  <label> Fries -<span>&#8377;</span>100 </label>
+  <input type="number" min="0" value="0" data-time="4" data-name="Fries" />
+</div>
+<div class="menu-item">
+  <label> Pasta -<span>&#8377;</span>50 </label>
+  <label><input type="number" min="0" value="0" data-time="7" data-name="Pasta" /> 
+</div>
+<div class="menu-item">
+  <label>Noodles -<span>&#8377;</span>40</label>
+  <input type="number" min="0" value="0" data-time="4" data-name="Noodles" />
+</div>
+<div class="menu-item">
+  <label> MilkShake -<span>&#8377;</span>120</label>
+  <input type="number" min="0" value="0" data-time="15" data-name="MilkShake" />
+</div>
+<div class="menu-item">
+  <label> Samosa -<span>&#8377;</span>10</label>
+  <input type="number" min="0" value="0" data-time="1" data-name="Samosa" />
+</div>
+<div class="menu-item">
+  <label>Sandwiches -<span>&#8377;</span>40</label>
+  <input type="number" min="0" value="0" data-time="2" data-name="Sandwiches" />
+</div>
+<div class="menu-item">
+  <label> Fried Chicken -<span>&#8377;</span>70</label>
+  <input type="number" min="0" value="0" data-time="20" data-name="FriedChicken" />
+</div>
+<div class="menu-item">
+  <label>Roll -<span>&#8377;</span>50</label>
+  <input type="number" min="0" value="0" data-time="10" data-name="Roll" />
+</div>
+<div class="menu-item">
+  <label> Donuts -<span>&#8377;</span>70</label>
+  <input type="number" min="0" value="0" data-time="2" data-name="Donuts" />
+</div>
+<div class="menu-item">
+  <label>hot dog -<span>&#8377;</span>70</label>
+  <input type="number" min="0" value="0" data-time="10" data-name="hotdog" /> 
+</div>
+    <br />
+    <p id="waitTimeMessage"></p>
+    <button id="orderBtn">Place Order</button>
+  </div>
+
+  <div id="resultSection">
+     <h2>Your Order Summary:</h2>
+  <p id="cookTime"></p>
+  <p id="orderDateTime"></p> <!-- New -->
+  <div id="finalOrderSummary">
+    <ul id="finalSummaryList"></ul>
+    <p><strong>Total Cost: ₹<span id="finalTotalPrice"></span></strong></p>
+  </div>
+  <h2>Thanks for ordering 🥰</h2>
+  <p>Enjoy the food!</p>
+</div>
+
+
+  <button id="homeBtn">Go to Home Page</button>
+
+  <audio id="clickSound">
+    <source src="click.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
