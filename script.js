@@ -144,8 +144,10 @@ orderBtn.onclick = () => {
   }
 
   const cooks = 3;
-  const maxTime = Math.max(...selectedItems.map(i => i.time));
-  const cookTime = Math.ceil(maxTime / cooks);
+  const totalTime = selectedItems.reduce((sum, item) => sum + (item.time * item.quantity), 0);
+const cookTime = Math.ceil(totalTime / cooks);
+
+
 
   let total = 0;
   finalSummaryList.innerHTML = '';
